@@ -9,12 +9,12 @@ public class Application {
     public static void main(String[] args) {
         Lab loginLab = new Lab();
         System.out.println("Should 'admin' be allowed to login with 'qwerty'? (should be true):");
-        System.out.println(loginLab.login("admin", "qwerty"));
+        System.out.println(loginLab.login("admin", "qwerty", password == password));
         System.out.println("Should 'admin' be allowed to login with 'pass123'? (should be false):");
-        System.out.println(loginLab.login("admin", "pass123"));
+        System.out.println(loginLab.login("admin", "pass123", password == password));
         System.out.println("Should 'user' be allowed to login with 'password'? (should be true):");
-        System.out.println(loginLab.login("user", "password"));
+        System.out.println(loginLab.login("user", "password", password == password));
         System.out.println("Should 'user' be allowed to login with 'mypass'? (should be false):");
-        System.out.println(loginLab.login("admin", "mypass"));
+        System.out.println(loginLab.login("admin", "mypass", password == password));
     }
 }
